@@ -925,3 +925,163 @@
                             <tr>
                                 <td class="product-row">
                                     <img src="/api/placeholder/40/40" alt="Rice" class
+                                    <td class="product-row">
+                                        <img src="/api/placeholder/40/40" alt="Rice" class="product-image">
+                                        Tastic Parboiled Rice 5kg
+                                    </td>
+                                    <td class="item-price">R 89.99</td>
+                                </tr>
+                            </table>
+    
+                            <div class="receipt-totals">
+                                <table>
+                                    <tr>
+                                        <td>Subtotal:</td>
+                                        <td class="total-price">R 175.96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VAT (15%):</td>
+                                        <td class="total-price">R 26.39</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total:</td>
+                                        <td class="total-price">R 202.35</td>
+                                    </tr>
+                                </table>
+                            </div>
+    
+                            <div class="receipt-actions">
+                                <button class="btn"><i class="fas fa-print"></i> Print Receipt</button>
+                                <button class="btn btn-secondary"><i class="fas fa-envelope"></i> Email Receipt</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="recent" class="tab-content">
+                        <div class="sales-chart">
+                            <div class="chart-bars">
+                                <div class="chart-bar" style="--height: 30%; --i: 0" data-value="R 720"></div>
+                                <div class="chart-bar" style="--height: 60%; --i: 1" data-value="R 1540"></div>
+                                <div class="chart-bar" style="--height: 45%; --i: 2" data-value="R 980"></div>
+                                <div class="chart-bar" style="--height: 80%; --i: 3" data-value="R 2100"></div>
+                            </div>
+                            <div class="chart-labels">
+                                <div class="chart-label">Mon</div>
+                                <div class="chart-label">Tue</div>
+                                <div class="chart-label">Wed</div>
+                                <div class="chart-label">Thu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sidebar animate__animated animate__fadeInRight">
+                    <h2 class="section-title"><i class="fas fa-tag"></i> Current Promotions</h2>
+                    <div class="promo-card">
+                        <div class="discount">20%</div>
+                        <h3>Weekend Special</h3>
+                        <p>All fresh produce this weekend only</p>
+                        <p class="text-small">Valid until 05/05/2025</p>
+                    </div>
+                    
+                    <div class="promo-card">
+                        <div class="discount">R100</div>
+                        <h3>First Time Shopper</h3>
+                        <p>Get R100 off your first online order</p>
+                        <p class="text-small">Valid for new customers</p>
+                    </div>
+    
+                    <h2 class="section-title"><i class="fas fa-clock"></i> Recent Receipts</h2>
+                    <ul class="receipt-list">
+                        <li class="receipt-item">
+                            <div class="receipt-item-header">
+                                <div class="receipt-item-title">Receipt #SR-202505020123</div>
+                                <div class="receipt-item-date"><i class="fas fa-calendar-alt"></i> 02-05-2025</div>
+                            </div>
+                            <div class="receipt-item-info">
+                                <span><i class="fas fa-coins"></i> R 148.75</span>
+                                <span><i class="fas fa-store"></i> Store #45</span>
+                            </div>
+                        </li>
+                        <li class="receipt-item">
+                            <div class="receipt-item-header">
+                                <div class="receipt-item-title">Receipt #SR-202505010987</div>
+                                <div class="receipt-item-date"><i class="fas fa-calendar-alt"></i> 01-05-2025</div>
+                            </div>
+                            <div class="receipt-item-info">
+                                <span><i class="fas fa-coins"></i> R 89.99</span>
+                                <span><i class="fas fa-store"></i> Store #32</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Store Locator</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Returns Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Online Shopping</a></li>
+                            <li><a href="#">Money Transfers</a></li>
+                            <li><a href="#">Insurance</a></li>
+                            <li><a href="#">Mobile Airtime</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">PAIA Manual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>&copy; 2024 Shoprite Checkers. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <script>
+            // Tab functionality
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.dataset.tab;
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+    
+            // Animate elements on scroll
+            window.addEventListener('scroll', () => {
+                document.querySelectorAll('.animate__animated').forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    if (elementTop < window.innerHeight * 0.8) {
+                        element.style.opacity = 1;
+                    }
+                });
+            });
+        </script>
+    </body>
+    </html>
